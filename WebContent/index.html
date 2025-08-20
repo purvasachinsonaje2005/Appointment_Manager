@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/6476587/pexels-photo-6476587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(173, 216, 230, 0.5);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 220px;
+            background: rgba(20, 20, 20, 0.9); /* Darker background with some transparency */
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Darker shadow */
+            border-right: 3px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+        }
+
+        .menu-box {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2); /* Slightly lighter background for menu box */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .menu-title {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2); /* Slightly lighter background */
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; /* Ensure text color contrasts well */
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .sidebar ul li {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            border-radius: 25px; /* Pill-shaped buttons */
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s, border 0.3s;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Gradient background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        }
+
+        .sidebar ul li a:hover {
+            background: linear-gradient(135deg, rgba(173, 216, 230, 0.7), rgba(173, 216, 230, 0.4));
+            transform: scale(1.05);
+            border: 2px solid rgba(173, 216, 230, 0.9);
+        }
+
+        .sidebar ul li a.active {
+            background: linear-gradient(135deg, rgba(173, 216, 230, 0.5), rgba(173, 216, 230, 0.3));
+            border: 2px solid rgba(173, 216, 230, 0.7);
+        }
+
+        .content {
+            margin-left: 240px;
+            padding: 20px;
+            width: calc(100% - 240px);
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heading {
+            position: absolute;
+            top: 20px; /* Adjusted for better placement */
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px 40px;
+            border-radius: 25px;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6); /* Enhanced text shadow */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.9); /* Enhanced glow effect */
+            z-index: 10;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                justify-content: space-around;
+                box-shadow: none;
+                border-right: none; /* Remove border for mobile view */
+            }
+
+            .menu-box {
+                width: auto;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .content {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .heading {
+                font-size: 36px;
+                padding: 15px 30px;
+            }
+
+            .sidebar ul li {
+                margin-bottom: 0;
+            }
+
+            .sidebar ul li a {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-box">
+            <h2 class="menu-title">Main Menu</h2>
+            <ul>
+                <li><a href="AdminLogin.html" class="active">Admin</a></li>
+                <li><a href="EmpLogin.html">Employee</a></li>
+                <li><a href="UserLogin.html">User</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="heading">Appointment Manager</div>
+        <!-- Content goes here -->
+    </div>
+</body>
+</html>

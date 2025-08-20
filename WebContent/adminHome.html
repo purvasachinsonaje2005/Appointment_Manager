@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/6408282/pexels-photo-6408282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(173, 216, 230, 0.5);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(173, 216, 230, 0.8); /* Light blue background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 600px; /* Adjusted for better button alignment */
+            margin: 0;
+        }
+
+        .container h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 2.5em;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between buttons */
+            align-items: stretch; /* Ensures buttons stretch to container width */
+        }
+
+        .button {
+            background-color: #000; /* Black color */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+            display: block; /* Ensures button takes full width of container */
+        }
+
+        .button:hover {
+            background-color: #333; /* Slightly lighter black on hover */
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Home Page</h2>
+        <div class="button-container">
+            <a href="addEmp.html" class="button">Add Employee</a>
+            <a href="viewEmp.jsp" class="button">View Employee</a>
+            <a href="viewUser.jsp" class="button">View User</a>
+            <a href="index.html" class="button">Log Out</a>
+        </div>
+    </div>
+</body>
+</html>

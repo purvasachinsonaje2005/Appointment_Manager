@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .grid-item {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        .grid-item h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .grid-item p {
+            margin: 10px 0;
+            color: #666;
+        }
+        .btn {
+            display: block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #007bff;
+        }
+        form {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        form input[type="submit"] {
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #ffc107;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        form input[type="submit"]:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Employee Home Page</h1>
+
+    <div class="grid">
+        <div class="grid-item">
+            <h2>Pending Appointments</h2>
+           
+            <a href="PendingAppointment.jsp" class="btn">View</a>
+        </div>
+        
+        <div class="grid-item">
+            <h2>View Approved</h2>
+           
+            <a href="viewApproved.jsp" class="btn">View</a>
+        </div>
+        <div class="grid-item">
+            <h2>View Disapproved</h2>
+            
+            <a href="viewDisApproved.jsp" class="btn">View</a>
+        </div>
+        <div class="grid-item">
+            <h2>Today's Appointments</h2>
+          
+            <a href="TodayAppointments.jsp" class="btn">View</a>
+        </div>
+         <div class="grid-item">
+            <h2>Log Out</h2>
+          
+            <a href="index.html" class="btn">Log Out</a>
+        </div>
+    </div>
+
+    
+</div>
+
+</body>
+</html>

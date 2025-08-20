@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Page</title>
+<style>
+    /* Global styles */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background: url('Appointment_Background_Image.jpg') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .register-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        text-align: left;
+    }
+    .register-container h1 {
+        margin-bottom: 20px;
+        color: #333333;
+        text-align: center;
+    }
+    .register-container form {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        align-items: center;
+    }
+    .register-container label {
+        font-size: 14px;
+        color: #333333;
+    }
+    .register-container input[type="text"],
+    .register-container input[type="password"],
+    .register-container input[type="email"],
+    .register-container input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+    .register-container input[type="submit"] {
+        grid-column: span 2;
+        padding: 10px;
+        border: none;
+        background-color: #007bff;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .register-container input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .register-container a {
+        grid-column: span 2;
+        color: #007bff;
+        text-decoration: none;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+        display: block;
+    }
+    .register-container a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<div class="register-container">
+    <h1>Register Here</h1>
+    <form action="UserReg" method="post">
+        <label for="uname">Name</label>
+        <input type="text" id="uname" name="uname" placeholder="Enter Name" required>
+
+        <label for="udesg">Designation</label>
+        <input type="text" id="udesg" name="udesg" placeholder="Enter Designation" required>
+
+        <label for="udep">Department</label>
+        <input type="text" id="udep" name="udep" placeholder="Enter Department" required>
+
+        <label for="cname">Company Name</label>
+        <input type="text" id="cname" name="cname" placeholder="Enter Company name" required>
+
+        <label for="ucontact">Contact Number</label>
+        <input type="tel" id="ucontact" name="ucontact" placeholder="Enter Contact Number" required>
+
+        <label for="uadd">Address</label>
+        <input type="text" id="uadd" name="uadd" placeholder="Enter the address" required>
+
+        <label for="uemail">Email ID</label>
+        <input type="email" id="uemail" name="uemail" placeholder="Enter email ID" required>
+
+        <label for="upassword">Password</label>
+        <input type="password" id="upassword" name="upassword" placeholder="Enter the password" required>
+
+        <input type="submit" value="Register">
+
+        <a href="EmpLogin.html">Old User? Click here to Login</a>
+    </form>
+</div>
+
+</body>
+</html>

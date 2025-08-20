@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to RemindMe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Appointment_Background_Image.jpg');
+            background-size: cover; /* Adjusts the background image size */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Ensures the background image does not repeat */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            height: 100vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            color: #000; /* Black color for headings */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+        }
+        .links a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #0288d1;
+            font-weight: bold;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        input[type="text"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #2196F3; /* Blue background */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0b7dda; /* Darker blue on hover */
+        }
+        .forgot-password {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #f44336; /* Red color for link */
+            text-decoration: none;
+        }
+        .forgot-password:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Login</h1>
+        <form action="EmpLogin" method="post">
+            <input type="text" name="email" placeholder="Enter email" required>
+            <br><br>
+            <input type="password" name="epassword" placeholder="Enter Password" required>
+            <br><br>
+            <input type="submit" value="Login">
+            <br><br>
+        </form>
+        <a href="ChangePasswordEmp.html" class="forgot-password">Forgot Password?</a>
+    </div>
+</body>
+</html>

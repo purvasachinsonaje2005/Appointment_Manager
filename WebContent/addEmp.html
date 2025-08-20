@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/6408282/pexels-photo-6408282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Update the path if necessary */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: rgba(173, 216, 230, 0.7); /* Light blue color with transparency */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .form-container h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"] {
+            background-color: black;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add Employee</h2>
+        <form action="EmpAdd" method="post">
+            <div class="form-group">
+                <label for="ename">Employee Name:</label>
+                <input type="text" id="ename" name="ename" required>
+            </div>
+            <div class="form-group">
+                <label for="edesg">Designation:</label>
+                <input type="text" id="edesg" name="edesg" required>
+            </div>
+            <div class="form-group">
+                <label for="edep">Department:</label>
+                <input type="text" id="edep" name="edep" required>
+            </div>
+            <div class="form-group">
+                <label for="econtact">Contact:</label>
+                <input type="text" id="econtact" name="econtact" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="epassword">Password:</label>
+                <input type="password" id="epassword" name="epassword" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add Employee">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
